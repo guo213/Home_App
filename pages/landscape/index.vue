@@ -1,18 +1,26 @@
 <template>
-	<div>landscape
+	<view class="content">
+		<view class="text-area">rrerqwerqer
+		</view>
+
 		<FooterBar></FooterBar>
-	</div>
+	</view>
 </template>
 
 <script>
-	import FooterBar from '@/layouts/FooterBar.vue'
+	// import FooterBar from '@/layouts/FooterBar.vue'
 	export default {
-		components: {
-			FooterBar
-		}
+		// components: {
+		// 	FooterBar
+		// },
+		data() {
+			return {
+
+			}
+		},
+		methods: {}
 	}
 </script>
 
-<style lang="scss">
-
+<style>
 </style>

@@ -17,7 +17,7 @@
 				</a-row>
 				<a-row justify="end" align="middle" type="flex" :gutter="6">
 					<a-col v-for="item in olineUsers" :key="item.id">
-					<Avterdevice :avter="item.avter" :device="item.device" />
+						<Avterdevice :avter="item.avter" :device="item.device" />
 					</a-col>
 				</a-row>
 			</a-row>
@@ -28,14 +28,17 @@
 
 <script>
 	import Avterdevice from '@/components/avterdevice.vue'
-	import FooterBar from '@/layouts/FooterBar.vue'
+	// import FooterBar from '@/layouts/FooterBar.vue'
 	export default {
 		components: {
-			FooterBar,
+			// FooterBar,
 			Avterdevice
 		},
 		onLoad() {
 			uni.hideTabBar()
+		},
+		created() {
+			console.log(this.$store)
 		},
 		data: () => {
 			return {
@@ -55,8 +58,7 @@
 		}
 	}
 </script>
-<style >
-
+<style>
 	.topTip {
 		font-size: .75rem;
 		padding: 0 .875rem;
