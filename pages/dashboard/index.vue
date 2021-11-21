@@ -22,23 +22,26 @@
 				</a-row>
 			</a-row>
 		</a-row>
+		<ProposeCard></ProposeCard>
+		<CameraCard></CameraCard>
+		<PlayerBar></PlayerBar>
 		<FooterBar></FooterBar>
 	</div>
 </template>
 
 <script>
-	import Avterdevice from '@/components/avterdevice.vue'
-	// import FooterBar from '@/layouts/FooterBar.vue'
 	export default {
-		components: {
-			// FooterBar,
-			Avterdevice
-		},
 		onLoad() {
 			uni.hideTabBar()
 		},
 		created() {
-			console.log(this.$store)
+			this.$GET({
+				uri: 'users'
+			}).then(
+				result => {
+					this.$LOG(result)
+				}
+			)
 		},
 		data: () => {
 			return {

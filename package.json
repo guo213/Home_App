@@ -4,14 +4,20 @@
     "version": "0.0.8",
     "description": "智能家居app端",
     "keywords": [],
+    "scripts": {
+        "serve": "vue-cli-service serve && webpack-dev-server --open"
+    },
     "dependencies": {
         "ant-design-vue": "^1.7.8",
         "is-negative-zero": "^2.0.1",
+        "lodash": "^4.17.21",
         "sass": "^1.43.2",
         "vuex": "^3.6.2"
     },
     "devDependencies": {
+        "axios": "^0.24.0",
         "babel-plugin-import": "^1.13.3",
-        "core-js": "^2.6.12"
+        "core-js": "^2.6.12",
+        "webpack-dev-server": "^4.3.1"
     }
 }

@@ -1,10 +1,10 @@
 <template>
-	<view class="content">
-		<view class="text-area">rrerqwerqer
-		</view>
+	<div class="content">
+		<div class="text-area">rrerqwerqer
+		</div>
 
 		<FooterBar></FooterBar>
-	</view>
+	</div>
 </template>
 
 <script>

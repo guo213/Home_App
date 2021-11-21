@@ -2,6 +2,9 @@
 	export default {
 		onLaunch: function() {
 			uni.hideTabBar()
+			// console.log(this.$message)
+			this.$LOG("加载成功！")
+			// this.$message.info('list')
 		},
 		onShow: function() {
 			// console.log('App Show');
@@ -15,6 +18,7 @@
 <style>
 	@import url("./static/css/icon.scss");
 	@import url("./static/css/index.scss");
+	@import url("./static/css/fontSize.scss");
 	@import url('ant-design-vue/dist/antd.css');
 	/*每个页面公共css */
 </style>
