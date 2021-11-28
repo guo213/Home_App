@@ -1,18 +1,16 @@
 <template>
 	<div class="content">
-		<div class="text-area">rrerqwerqer
-		</div>
-
+		<LandscapeCard></LandscapeCard>
 		<FooterBar></FooterBar>
 	</div>
 </template>
 
 <script>
-	// import FooterBar from '@/layouts/FooterBar.vue'
+	import LandscapeCard from "./components/LandscapeCard/LandscapeCard.vue"
 	export default {
-		// components: {
-		// 	FooterBar
-		// },
+		components:{
+			LandscapeCard
+		},
 		data() {
 			return {
 

@@ -30,18 +30,26 @@
 </template>
 
 <script>
+	import CameraCard from "./components/CameraCard/CameraCard.vue"
+	import PlayerBar from "./components/PlayerBar/PlayerBar.vue"
+	import ProposeCard from "./components/ProposeCard/ProposeCard.vue"
 	export default {
+		components:{
+			ProposeCard,
+			CameraCard,
+			PlayerBar
+		},
 		onLoad() {
 			uni.hideTabBar()
 		},
 		created() {
-			this.$GET({
-				uri: 'users'
-			}).then(
-				result => {
-					this.$LOG(result)
-				}
-			)
+			// this.$GET({
+			// 	uri: 'users'
+			// }).then(
+			// 	result => {
+			// 		this.$LOG(result)
+			// 	}
+			// )
 		},
 		data: () => {
 			return {
